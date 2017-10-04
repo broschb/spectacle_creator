@@ -1,10 +1,14 @@
 {
   "name": "spectacle_creator",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "build/index.js",
   "repository": "https://github.com/broschb/spectacle_creator.git",
   "author": "“Brandon <broschb@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "babel lib -d build",
+    "prepublish": "npm run build"
+  },
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.0",
